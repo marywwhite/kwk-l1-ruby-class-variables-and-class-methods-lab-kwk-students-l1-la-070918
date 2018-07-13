@@ -2,10 +2,17 @@ class Song
 
   attr_accesor :name, :artist, :assert_generates
    @@count = 0
-  @@artists = [ ]
-  @@genres = [ ]
+   @@artists = [ ]
+   @@genres = [ ]
   
-  
+  def initialize(name, artist, genre)
+   @name = name
+   @artist = artist
+   @genre = genre
+   @@count +=1
+   @@genres << genre
+   @@artists << artist
+ end
   
   
   if artist_count{artist} +=1
