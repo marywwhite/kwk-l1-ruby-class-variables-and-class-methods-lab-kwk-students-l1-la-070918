@@ -1,8 +1,9 @@
 class Song
 
   attr_accesor :name, :artist, :assert_generates
-  @@count = 0
-  @@artists = []
+   @@count = 0
+  @@artists = [ ]
+  @@genres = [ ]
   
   
   
